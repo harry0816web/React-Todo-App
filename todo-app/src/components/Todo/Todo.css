@@ -1,0 +1,65 @@
+.todo-item {
+  background-color: white;
+  margin: 1rem 0;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  color: #2c3e50;
+  transition: all 0.25s ease;
+  border-left: 4px solid #ff6b6b;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-item:hover {
+  transform: translateX(8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+}
+
+.todo-item::before {
+  content: "🍅";
+  position: absolute;
+  left: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2em;
+}
+
+.todo-item.completed {
+  border-left-color: #4caf50;
+  opacity: 0.7;
+}
+
+.todo-item.completed::before {
+  content: "✅";
+}
+
+.todo-item.completed .todo-text {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.todo-text {
+  flex: 1;
+  font-size: 1.1em;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+}
+
+.delete-button:hover {
+  opacity: 1;
+  background-color: #ffebee;
+  transform: scale(1.1);
+}
