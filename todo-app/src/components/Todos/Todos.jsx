@@ -1,6 +1,6 @@
 import Todo from '../Todo/Todo'
 
-function Todos({ todos, onToggle, onDelete }) {
+function Todos({ todos, onToggle, onDelete, onTimer }) {
   return (
     <ul className="todo-list">
       {todos.map((todo) => (
@@ -9,6 +9,7 @@ function Todos({ todos, onToggle, onDelete }) {
           todo={todo} 
           onToggle={onToggle}
           onDelete={onDelete}
+          onTimer={onTimer}
         />
       ))}
     </ul>

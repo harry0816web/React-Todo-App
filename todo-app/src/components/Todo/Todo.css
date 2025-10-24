@@ -63,3 +63,21 @@
   background-color: #ffebee;
   transform: scale(1.1);
 }
+
+.timer-button {
+  background: none;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  opacity: 0.6;
+  margin-right: 0.5rem;
+}
+
+.timer-button:hover {
+  opacity: 1;
+  background-color: #e3f2fd;
+  transform: scale(1.1);
+}
